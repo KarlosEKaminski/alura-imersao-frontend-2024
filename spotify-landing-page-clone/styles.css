@@ -1,5 +1,7 @@
 body {
     background-color: #000;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -18,7 +20,7 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 12px;
+    padding: 8px;
     width: 300px;
 }
 
@@ -168,4 +170,59 @@ body {
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
+}
+
+.footer {
+    background: linear-gradient(90deg, rgba(174,41,151,1) 0%, rgba(129,95,195,1) 35%, rgba(81,154,244,1) 100%);
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 16px);
+    min-width: 620px;
+    height: auto;
+    margin: 8px;
+    box-sizing: border-box;
+
+}
+
+.footer .footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    position: relative;
+    padding: 11px 24px 7px 15px;
+}
+
+.footer__text .text {
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer__text .title {
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 8px;
+    display: block;
+}
+
+.footer__text .subtitle {
+    font-weight: 800px;
+    font-size: 16px;
+    padding-bottom: 0;
+    display: block;
+}
+
+.footer__content .footer__button {
+    background-color: #fff;
+    color: #000;
+    justify-content: center;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: none;
+    border: 0px;
+    width: 196px;
+    font-weight: 800;
+    font-family: "DM Sans", sans-serif;
+    padding: 15px;
+    vertical-align: middle;
 }
