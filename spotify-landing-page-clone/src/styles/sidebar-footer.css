@@ -1,6 +1,8 @@
 body {
     background-color: #000;
-    font-family: var(--font-dm-sans)
+    font-family: var(--font-dm-sans);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .logo {
@@ -19,8 +21,9 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 8px;
+    margin: 8px 8px 82px 8px;
     width: 290px;
+    background-color: #000;
 }
 
 .sidebar__navigation {
@@ -50,9 +53,17 @@ span.fa.fa-home::before {
     margin-right: 12px;
 }
 
+span.fa.fa-home:hover {
+    color: #fff;
+}
+
 span.fa.fa-search::before {
     font-size: 24px;
     margin-right: 15px;
+}
+
+span.fa.fa-search:hover {
+    color: #fff;
 }
 
 .library {
@@ -61,9 +72,9 @@ span.fa.fa-search::before {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 4px 8px;
     color: #b3b3b3;
-    font-weight: 600;
+    font-weight: 600px;
+    height: calc(100% - 164px);
     font-size: 14px;
     margin-top: 8px;
 }
@@ -76,6 +87,7 @@ span.fa.fa-search::before {
 .library .library__button {
     display: flex;
     margin-right: 10px;
+    margin-left: 16px;
     color: #b3b3b3;
     background-color: transparent;
     border: 0px;
@@ -84,7 +96,20 @@ span.fa.fa-search::before {
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    padding: 20px 10px;
+    padding: 20px 10px 0px 10px;
+}
+
+.library__button:hover {
+    color: #fff;
+}
+
+span.fa.fa-book::before {
+    font-size: 25px;
+}
+
+span.fa.fa-plus::before {
+    font-size: 18px;
+    margin-right: 13px;
 }
 
 .library .library__button .fa{
@@ -108,7 +133,7 @@ span.fa.fa-search::before {
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
-    margin: 8px 0px;
+    margin: 0px 8px 90px 8px;
     padding: 16px 20px;
     border-radius: 10px;
 }
@@ -155,12 +180,16 @@ span.fa.fa-search::before {
 .sidebar .cookies a {
     color: #b3b3b3;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 13px;
     text-decoration: none;
 }
 
 .sidebar .cookies a:hover {
     text-decoration: underline;
+}
+
+span.fa.fa-globe::before {
+    font-size: 16px;
 }
 
 .languages .languages__button {
@@ -171,9 +200,15 @@ span.fa.fa-search::before {
     align-items: center;
     font-weight: bold;
     width: 170px;
-    margin: 8px;
+    margin: 0px 24px 32px 24px;
     padding: 8px;
     border-radius: 20px;
+}
+
+.languages__button:hover {
+    transform: scale(01.05);
+    border-width: 1.9px;
+    border-color: aliceblue;
 }
 
 .disclaimer-premium {
@@ -204,7 +239,7 @@ span.fa.fa-search::before {
 .disclaimer-premium .disclaimer-premium-subtitle {
     color: #fff;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500px;
     padding-bottom: 8px;
 }
 
@@ -222,4 +257,8 @@ span.fa.fa-search::before {
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+}
+
+.button-container:hover {
+    transform: scale(01.05);
 }

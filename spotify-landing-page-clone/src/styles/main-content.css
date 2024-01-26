@@ -4,19 +4,18 @@
     max-width: 80vw;
     height: 100vh;
     margin-left: 298px;
-    margin-right: 40px;
+    padding-right: 8px;
 }
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    height: 32px;
     padding: 16px;
-    margin: 8px;
-    border-radius: 8px;
-    background-color: #121212;
-    padding: 12px;
+    margin: 8px 0px 0px 8px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #090909;
 }
 
 .header__navigation .navigation {
@@ -26,7 +25,8 @@
 }
 
 .header__navigation .navigation .arrow-left {
-    margin-right: 1.25rem;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .arrow-left, .arrow-right {
@@ -50,24 +50,28 @@
 .header__search {
     display: flex;
     align-items: center;
-    width: 305px;
+    width: 364px;
     height: 48px;
-    margin-left: 8px;
+    margin-right: 79px;
     background-color: #242424;
     border-radius: 500px;
     border: 1px solid transparent;
 }
 
+.header__search:hover {
+    border-color: #7a7676;
+}
+
 .header__search img {
     width: 16px;
     height: 16px;
-    margin-left: 20px;
+    margin-left: 12px;
 }
 
 .header__search input {
     background: transparent;
     border: none;
-    padding: 0px 100px 0 12px;
+    padding: 0px 100px 0px 0px;
     color: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -90,11 +94,31 @@
     margin-right: 32px;
 }
 
+.subscribe:hover {
+    transform: scale(01.05);
+    color: #fff;
+}
+
 .header__login .login {
-    width: 100px;
+    width: 110px;
     height: 48px;
     color: #000;
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+    margin-right: 10px;
+}
+
+.login:hover {
+    transform: scale(01.05);
+}
+
+.content {
+    background-color: #121212;
+    margin: 0px 0px 118px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(100% - 8px);
+    height: 100%;
 }
