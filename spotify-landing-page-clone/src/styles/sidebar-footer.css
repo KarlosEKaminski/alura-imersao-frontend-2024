@@ -133,10 +133,25 @@ span.fa.fa-plus::before {
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
-    margin: 0px 8px 90px 8px;
+    margin: 0px 8px 0px 8px;
     padding: 16px 20px;
     border-radius: 10px;
+    overflow-y: auto;
 }
+
+.section-playlist::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .section-playlist::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    display:none
+  }
+
+  .section-playlist::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+  }
 
 .section-playlist .section-playlist__content {
     display: flex;
@@ -150,10 +165,11 @@ span.fa.fa-plus::before {
 
 .section-playlist__content .title {
     font-weight: 700;
+    font-size: 16px;
 }
 
 .section-playlist__content .subtitle {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
 }
 
@@ -163,8 +179,8 @@ span.fa.fa-plus::before {
     background-color: #fff;
     color: #000;
     border-radius: 20px;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -173,15 +189,24 @@ span.fa.fa-plus::before {
     margin-top: 12px;
 }
 
+.section-playlist__button:hover {
+    transform: scale(01.05);    
+}
+
 .sidebar .cookies {
-    margin: 25px 20px;   
+    margin: 40px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
 }
 
 .sidebar .cookies a {
     color: #b3b3b3;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 11px;
+    margin: 7px 7px 13.5px 7px;
     text-decoration: none;
+    
 }
 
 .sidebar .cookies a:hover {

@@ -7,10 +7,12 @@ function requestApi(searchTerm) {
     fetch(url)
         .then((response) => response.json())
         .then((result) => displayResults(result))
+        .catch((error) => console.error('Erro ao buscar os artistas:', error));
 }
 
 function displayResults(result) {
-    resultPlaylist.classList.add("hidden")
+    resultPlaylist.classList.add('hidden');
+
     const artistName = document.getElementById('artist-name');
     const artistImage = document.getElementById('artist-img');
 
