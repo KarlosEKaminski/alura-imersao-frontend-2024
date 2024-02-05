@@ -20,7 +20,7 @@
 4. Abra o terminal e utilize: ```cd spotify-landing-page-clone``` para ir até o diretório do projeto.
 5. Utilize o comando: ```json-server --watch api-artists/artists.json --port 3000``` para iniciar o servidor JSON.
 6. Abra o arquivo **_index.html_**.
-7. Compare com o site oficial: https://open.spotify.com/search
+7. Compare com o <a href="https://open.spotify.com/search" target="_blank">site oficial do spotify</a>
 
 ## 📸 Screenshot
 <div style="display: flex;">
