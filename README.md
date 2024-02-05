@@ -25,6 +25,6 @@
 ## 📸 Screenshots
 <div style="display: flex;">
    <p align="center">
-      <img src="spotify-landing-page-clone/src/assets/screenshots/screenshot-spotify-clone" alt="Screenshot da tela do projeto" width="200"/>
+      <img src="spotify-landing-page-clone/src/assets/screenshots/screenshot-spotify-clone.png" alt="Screenshot da tela do projeto" width="880"/>
    </p>
 </div>
