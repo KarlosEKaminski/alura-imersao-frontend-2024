@@ -22,7 +22,7 @@
 6. Abra o arquivo **_index.html_**.
 7. Compare com o site oficial: https://open.spotify.com/search
 
-## 📸 Screenshots
+## 📸 Screenshot
 <div style="display: flex;">
    <p align="center">
       <img src="spotify-landing-page-clone/src/assets/screenshots/screenshot-spotify-clone.png" alt="Screenshot da tela do projeto" width="880"/>
